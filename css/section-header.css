@@ -1,0 +1,19 @@
+.section-header {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.section-header:hover .line {
+    width: 100px;
+}
+
+.section-header .line {
+    display: block;
+    background-color: var(--maincolor);
+    height: 1px;
+    width: 80px;
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+    transition: width .5s ease;
+}

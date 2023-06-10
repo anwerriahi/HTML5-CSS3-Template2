@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Template 2</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts-6/css/all.min.css">
+    <link rel="stylesheet" href="css/section-header.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- script part -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 100 && scrollTop < 200) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+            if (scrollTop > 200) {
+                header.classList.add('fixed');
+            } else {
+                header.classList.remove('fixed');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href=""><img src="images/brandlogo/logo.png" alt=""></a>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li class="dropdown">
+                            <a class="nav-link" href="#">furntiture</a>
+                            <div class="dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="caption">Tables</a></li>
+                                    <li><a href="#">Study Table</a></li>
+                                    <li><a href="#">Coffee table</a></li>
+                                    <li><a href="#">Stools</a></li>
+                                    <li><a href="#">Writoing Desk</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="caption">Dining</a></li>
+                                    <li><a href="#">Dining Chairs</a></li>
+                                    <li><a href="#">Bar Stools</a></li>
+                                    <li><a href="#">Benches</a></li>
+                                    <li><a href="#">Dining Table</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="caption">Sofas</a></li>
+                                    <li><a href="#">armchairs</a></li>
+                                    <li><a href="#">day beds</a></li>
+                                    <li><a href="#">poufs</a></li>
+                                    <li><a href="#">lounge chairs</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="nav-link" href="#">armories</a></li>
+                        <li><a class="nav-link" href="#">study table</a></li>
+                        <li class="dropdown"><a class="nav-link" href="#">plastic chair</a>
+                            <div class="dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" ">Bookshelves</a></li>
+                                    <li><a href=" #">Cupboards</a></li>
+                                    <li><a href="#">Shoe Racks</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="nav-link" href="#">wardrobes</a></li>
+                        <li class="dropdown"><a class="nav-link" href="#">more</a>
+                            <div class="dropdown-menu">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" ">Office Chairs</a></li>
+                                <li><a href=" #">Office Chairs</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="login">
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-search fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-user fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bag-shopping fa-lg"></i><span class="your-bag">Your
+                                    bag</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slider Section -->
+    <section class="slider">
+        <div class="container">
+            <a href="#" class="banner">
+                <img src="images/banners/main-banner-1-1600x700.jpg" alt="">
+            </a>
+            <div class="swipper-pagination-slider">
+                <span class="swipper-pagination swipper-pagination-on"></span>
+                <span class="swipper-pagination swipper-pagination-off"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category pd-y-70">
+        <div class="section-header ">
+            <h1 class="section-title">
+                special category
+            </h1>
+            <span class="line "></span>
+        </div>
+
+        <!-- Category Section Header -->
+        <div class="container">
+            <div class="category-items">
+                <div class="category-item">
+                    <a href=""> <img src="images/products/category-banner1.jpg" alt="">
+                        <h4 class="category-item-title pd-y-70-10px">most popular</h4>
+                        <h2 class="category-item-collection-name">
+                            modern chair collection
+                        </h2>
+                        <i class="fa fa-angles-right fa category-item-button"></i>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#">
+                        <img src="images/products/category-banner2.jpg" alt="">
+                        <h4 class="category-item-title pd-y-70-10px">most popular</h4>
+                        <h2 class="category-item-collection-name">
+                            modern chair collection
+                        </h2>
+                        <i class="fa fa-angles-right fa category-item-button"></i>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href=""><img src="images/products/category-banner3.jpg" alt="">
+                        <h4 class="category-item-title pd-y-70-10px">most popular</h4>
+                        <h2 class="category-item-collection-name">
+                            modern chair collection
+                        </h2>
+                        <i class="fa fa-angles-right fa category-item-button"></i>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href=""><img src="images/products/category-banner4.jpg" alt="">
+                        <h4 class="category-item-title pd-y-70-10px">most popular</h4>
+                        <h2 class="category-item-collection-name">
+                            modern chair collection
+                        </h2>
+                        <i class="fa fa-angles-right fa category-item-button"></i>
+                    </a>
+                </div>
+                <div class="swipper-pagination-slider">
+                    <span class="swipper-pagination swipper-pagination-on"></span>
+                    <span class="swipper-pagination swipper-pagination-off"></span>
+                </div>
+            </div>
+            <!-- discount section /under category section -->
+            <div class="discount mg-y-100">
+                <div class="discount-desc">
+                    <div class="top">
+                        <i class="fa fa-quote-left fa-lg"></i>
+                        <div class="discount-desc-top-content">
+                            <h2 class="discount-title capitalize">penelope astrit</h2>
+                            <span class="discount-subtitle capitalize">(marketing)</span>
+                        </div>
+
+                    </div>
+                    <div class="main">
+                        <p class="main-desc mg-y-50">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <a href="#" class="btn1"><span class="line-btn line-btn1"></span> </a>
+                        <a href="#" class="btn2"><span class="line-btn line-btn2"></span> </a>
+                        <a href="#" class="btn3"><span class="line-btn line-btn3"></span> </a>
+                    </div>
+                </div>
+                <div class="discount-item">
+                    <a href="#">
+                        <img src="images/products/cms-banner-1.jpg" class="zoomable" alt="">
+                        <span class="discount-item-value capitalize">30% discount</span>
+                        <span class="discount-item-desc capitalize">designing interior</span>
+                    </a>
+                </div>
+                <div class="discount-item">
+                    <a href="#">
+                        <img src="images/banners/cms-banner-2.jpg" class="zoomable" alt="">
+                        <span class="discount-item-value capitalize">20% discount</span>
+                        <span class="discount-item-desc capitalize">wooden study table</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="sprites">
+                <div class="sprites-item">
+                    <div class="sprites-icon sprites-icon1"></div>
+                    <div class="sprites-info">
+                        <h3>free delivery</h3>
+                        <span>free shipping on all order</span>
+                    </div>
+                </div>
+                <div class="sprites-item">
+                    <div class="sprites-icon sprites-icon2"></div>
+                    <div class="sprites-info">
+                        <h3>free delivery</h3>
+                        <span>free shipping on all order</span>
+                    </div>
+                </div>
+                <div class="sprites-item">
+                    <div class="sprites-icon sprites-icon3"></div>
+                    <div class="sprites-info">
+                        <h3>free delivery</h3>
+                        <span>free shipping on all order</span>
+                    </div>
+                </div>
+                <div class="sprites-item">
+                    <div class="sprites-icon sprites-icon4"></div>
+                    <div class="sprites-info">
+                        <h3>free delivery</h3>
+                        <span>free shipping on all order</span>
+                    </div>
+                </div>
+                <div class="sprites-item">
+                    <div class="sprites-icon sprites-icon5"></div>
+                    <div class="sprites-info">
+                        <h3>free delivery</h3>
+                        <span>free shipping on all order</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="category-hr">
+        </div>
+    </section>
+    <!-- End Categorry Section -->
+
+    <!-- Products Section -->
+    <section class="products ">
+        <div class="section-header ">
+            <h1 class="section-title">
+                Featured Products
+            </h1>
+            <span class="line "></span>
+        </div>
+        <div class="container">
+            <ul class="list-products list-unstyled capitalize mg-y-50">
+                <a href="" class="link-unstyled">
+                    <li>wooders chair</li>
+                </a>
+                <a href="" class="link-unstyled">
+                    <li>plastic chair</li>
+                </a>
+                <a href="" class="link-unstyled">
+                    <li>study table</li>
+                </a>
+                <a href="" class="link-unstyled">
+                    <li>wooders chair</li>
+                </a>
+            </ul>
+
+            <div class="products-items">
+
+                <div class="product-item">
+                    <a href="">
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="">
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href=""><span class="product-item-sale">sale</span>
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="">
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="products-items">
+
+                <div class="product-item">
+                    <a href="">
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="">
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href=""><span class="product-item-sale">sale</span>
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="">
+                        <div class="product-img">
+                            <img src="images/products/category-banner3.jpg" alt="" class="product-img-original">
+                            <div class="product-overlay">
+                                <img src="images/products/category-banner4.jpg" alt="" class="product-img-hovered">
+                                <ul class="product-overlay-menu list-unstyled">
+                                    <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa fa-eye"></i></a></li>
+                                    <li><a href=""><i class="fa fa-list"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-item-desc">
+                            <ul class="review-stars list-unstyled">
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star fa fa-star"></i></li>
+                                <li><i class="review-star review-star-last fa fa-star"></i></li>
+                            </ul>
+                            <span class="product-item-name capitalize">aliquam quaerat </span>
+                            <h4 class="product-item-price ">$108.80</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
